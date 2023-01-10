@@ -1,7 +1,7 @@
 PImage backGroundImage, quitButtonImage;
 //
 void imagePopulation() {
-  backGroundImage = loadImage ("../Images/genji.jpg");
+  backGroundImage = loadImage ("../Image used/genji.jpg");
 }//End imagePopulation
 //
 void imageNightMode() {

@@ -1,3 +1,11 @@
+//Library: use Sketch / Import Library / Add Library / Minim
+import ddf.minim.*;
+import ddf.minim.analysis.*;
+import ddf.minim.effects.*;
+import ddf.minim.signals.*;
+import ddf.minim.spi.*;
+import ddf.minim.ugens.*;
+//
 //Global Variables
 int appWidth, appHeight, smallerDimension, largerDimension;
 int reset=1;
@@ -10,9 +18,15 @@ boolean OS_on=false, splashScreenStart=false;
 Boolean nightMode=false;
 color purple=#FF00FF, resetDefaultInk=#000000, white=#FFFFFF;
 //
+Minim minim; //creates object to access all functions
+AudioPlayer song1; //creates "Play List" variable holding extensions WAV, AIFF, AU, SND, and MP3
+//
 void setup() {
   //Display & Orientation
-  size(600, 400); 
+  size(600, 400); //Remind you of Display Geometry
+  minim = new Minim(this); //load from data directory, loadFile should also load from project folder, like loadImage
+  song1 = minim.loadFile("../music/No_Mercy.mp3");//able to pass absolute path, file name & extension, and URL
+  //
   displayOrientation();
   appWidth = width;
   appHeight = height;

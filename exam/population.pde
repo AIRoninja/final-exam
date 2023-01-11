@@ -43,7 +43,7 @@ void population() {
   backgroundWidth = appWidth;
   backgroundHeight = appHeight;
   //
-  quitWidth = appWidth * 1/3;
+  quitWidth = appWidth * 1/6;
   quitHeight = appHeight * 1/10;
   quitX = centerX - quitWidth * 1/2;
   quitY = centerY - 4*quitHeight;

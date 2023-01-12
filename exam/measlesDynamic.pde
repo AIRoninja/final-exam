@@ -4,7 +4,7 @@ color measlesColour;
 void measlesDynamic() {
   //
   //Population Code, must stay here
-  measleDiameter = random(appHeight*1/80, appHeight*1/25);
+  measleDiameter = random(appHeight*1/100, appHeight*1/25);
   float measleRadius = measleDiameter * 1/2;
   measleX = random(rectFaceX+measleRadius, rectFaceX+rectFaceWidth-measleRadius);
   measleY = random(appHeight*0+measleRadius, appHeight-measleRadius);
@@ -16,6 +16,7 @@ void measlesDynamic() {
   noStroke();
   fill(measlesColour);
   ellipse( measleX, measleY, measleDiameter, measleDiameter );
+  fill(resetWhite);
   stroke(reset);
 } //End measlesDynamic
 //

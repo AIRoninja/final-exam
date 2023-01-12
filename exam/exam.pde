@@ -25,7 +25,7 @@ void setup() {
   //Display & Orientation
   size(600, 400); //Remind you of Display Geometry
   minim = new Minim(this); //load from data directory, loadFile should also load from project folder, like loadImage
-  song1 = minim.loadFile("../music/No_Mercy.mp3");//able to pass absolute path, file name & extension, and URL
+  song1 = minim.loadFile("../music/Discord.mp3");//able to pass absolute path, file name & extension, and URL
   //
   displayOrientation();
   appWidth = width;
@@ -50,10 +50,10 @@ void draw() {
   //OS System Button
   //Start Button | Measles Reset Button
   //Theme: face & measles with different sizes and colours
-  measlesDynamic(); //Teacher Lesson
-  eyes(); //Student created
-  mouth(); //Student created
-  nose(); //Student created
+  measlesDynamic();
+  eyes();
+  mouth();
+  nose();
   //
   //Assginment #2: OS Level Mouse Click and Splash Screen
   if ( OS_on==true && splashScreenStart==false ) splashScreen(); //OS Level Mouse Click

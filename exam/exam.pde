@@ -15,7 +15,7 @@ boolean OS_on=false, splashScreenStart=false;
  Purple not for Night Mode, full BLUE
  resetDefaultInk is WHITE, not Night Mode Friendly, full BLUE
  */
-Boolean nightMode=false;
+boolean nightMode=false;
 color purple=#FF00FF, resetDefaultInk=#000000, white=#FFFFFF;
 //
 Minim minim; //creates object to access all functions
@@ -72,6 +72,7 @@ void keyPressed() {
   }
   //
   //Splash Screen SPACE Bar
+  //
   if ( OS_on==true && key==' ' ) {
     splashScreenStart = true;
     backgroundImage();
